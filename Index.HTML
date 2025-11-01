@@ -1,0 +1,171 @@
+<html>
+<head>
+  
+  <title>Galería de Pinturas-Pablo Arts</title>
+  <style>
+   
+    <body> 
+      background-color: white;
+    
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    header {
+      background: linear-gradient(90deg, #3f51b5, #5c6bc0);
+      color: white;
+      padding: 20px 50px;
+    }
+    /* ==== Galería ==== */
+    .galeria {
+      padding: 60px 50px;
+      text-align: center;
+    }
+
+     .galeria h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color:blue;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .pintura {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .pintura:hover {
+      transform: scale(1.05);
+    }
+
+    .pintura img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+
+
+    footer {
+      background-color: #3f51b5;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+   <center> <h1>🎨 PabloArts</h1></center>
+  </header>
+
+<bgcolor="black">
+   <center> <h1>Descubre el Arte que Inspira</h1></center>
+   <center><h3>Explora nuestra colección de pinturas únicas hechas con mucha dedicación y calidad.</h3></center>
+ 
+  <section id="galeria" class="galeria">
+    <h2>Galería de Pinturas</h2>
+    <div class="grid">
+      <div class="pintura">
+        <img src="img/pez.jpeg">
+      </div>
+      <div class="pintura">
+        <img src="img/naranja.jpeg">
+
+      </div>
+  </section>
+<center><button id="btnComentar" style="background:blue;color:white;padding:20px 40px;font-size:12px;border:none;border-radius:5px;cursor:pointer;">Comentar </button></center>
+
+<div id="cajaComentario" style="display:none;margin-top:10px;background:white;border:1px solid #ccc;padding:10px;border-radius:8px;width:1680px;">
+
+<center> <textarea id="comentario" rows="3" cols="25" placeholder="Escribe tu comentario..."></textarea><br></center>
+
+<center> <button onclick="enviarComentario()">Enviar</button></center>
+
+</div>
+<script>
+document.getElementById("btnComentar").onclick = function() { let caja = document.getElementById("cajaComentario");caja.style.display = (caja.style.display === "none") ? "block" : "none";}
+
+function enviarComentario() {  let texto = document.getElementById("comentario").value;if (texto.trim() !== "") {  alert("Comentario enviado: " + texto);document.getElementById("comentario").value = ""; } else { alert("Escribe un comentario antes de enviar."); }}
+
+</script>
+
+<button id="btnLike" style="background:#e91e63;color:white;padding:20px 30px;font-size:12px;border:none;border-radius:5px;cursor:pointer;">Like <span id="contador">0</span>
+
+</button>
+
+<script>
+
+let likes = 0;
+
+document.getElementById("btnLike").onclick = function() { likes++; document.getElementById("contador").innerText = likes; }
+
+</script>
+<body>
+<div class="contenedor">
+
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    height: 1500px;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .boton-flotante { 
+  
+    bottom: 10px;     
+      left: 50%; 
+        transform: translateX(205%);
+    background-color: green;
+    color: white; 
+    border: none;      
+    padding: 15px 25px;  
+    border-radius: 50px; 
+    font-size: 16px;    
+    cursor: pointer;    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+  }
+
+  .boton-flotante:hover {
+    background-color: black;
+     scale:1.1;   
+  }
+</style>
+</head>
+<body>
+
+
+<button class="boton-flotante" >
+<a href="Index1.html" class="boton-flotante derecha2">MIRAR PINTURAS</a>
+
+
+  </div> 
+
+    <center><h2>Contáctanos</h2></center>
+    <form>
+  <a href="https://wa.me/50432767972"> 
+ <center> <img src="img/whatsapp.jpeg" alt="CONTACTO DE WHATSAPP"></center>
+<center><h3>PARA MAYOR INFORMACIÓN</h3></center>
+    </form>
+ 
+
+</body>
+
+</html>
